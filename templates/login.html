@@ -10,34 +10,28 @@
 
 <BODY>
 <p>&nbsp;</p>
-
 <h1 align="center">User login </h1>
-<form id="login" name="login" action="login.action" method="post">
-<input
-    type="hidden"
-          name="back"            value="2"             />
+<form id="login" name="login" action="login" method="post">
+<input type="hidden" name="back" value="2"/>
 <table border="1" align="center" cellpadding="2">
 	<tr>
 		<td align="right" valign="top">ID:</td>
-		<td><input id="id" name="id" type="text" size="32" maxlength="32"></td>
+		<td><input id="user" name="user" type="text" size="32" maxlength="32"></td>
 	</tr>
 	<tr>
 		<td height="30" align="right">Password:</td>
 		<td height="30"><input name="password" type="password" id="password" size="32" maxlength="32"></td>
 	</tr>
 	<tr align="right">
-		<td height="30" colspan="2">
+		<td height="30" colspan="2">{{ status }}
+
 			<input name="submit" type="submit" value="login">
 		</td>
 	</tr>
+
 </table>
+
 </form>
 
-<SCRIPT type="text/javascript">
-<!--
-var login = document.getElementById("login");
-login.id.focus();
-//-->
-</SCRIPT>
 </BODY>
 </HTML>

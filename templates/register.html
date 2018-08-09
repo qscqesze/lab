@@ -11,16 +11,16 @@
 <body>
 
 <h1 align="center">Register a new account Lutece Lab</h1>
-<form name="register" action="register.action" method="post" onsubmit="return validate(this);">
+<form name="register" action="register" method="post" onsubmit="return validate(this);">
 <table border="1" align="center">
 	<tr>
 		<td align="right">ID:</td>
-		<td><input id="id" name="user.id" type="text" size="32" maxlength="32"></td>
+		<td><input id="user" name="user" type="text" size="32" maxlength="32"></td>
 		<td>*</td>
 	</tr>
 	<tr>
 		<td align="right">Password:</td>
-		<td><input id="password" name="user.password" type="password" size="32" maxlength=16></td>
+		<td><input id="password2" name="password2" type="password" size="32" maxlength=16></td>
 		<td>*</td>
 	</tr>
 	<tr>
@@ -30,7 +30,7 @@
 	</tr>
 	<tr>
 		<td align="right">E-Mail:</td>
-		<td><input name="user.email" type="text" size="32" maxlength=100></td>
+		<td><input name="email" type="text" size="32" maxlength=100></td>
 		<td>*</td>
 	</tr>
 	<tr align="right">

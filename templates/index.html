@@ -54,14 +54,26 @@ a {color:black; text-decoration:none}
 			</td>
 		</tr>
 		
-		<tr>
-			<td align="right" class="menu"><a href="register_form.html">Register</a>
+
+
+        {% ifequal user '' %}
+            <tr>
+			    <td align="right" class="menu"><a href="register.html">Registe</a></td>
+		    </tr>
+            <tr>
+			    <td align="right" class="menu"><a href="login.html">Login</a>
 			</td>
-		</tr>
-		<tr>
-			<td align="right" class="menu"><a href="login_form.html">Login</a>
+        {% else %}
+            <tr>
+			    <td align="right" >{{ user }}</td>
+		    </tr>
+            <tr>
+			    <td align="right" class="menu"><a href="logout">Login out</a>
 			</td>
+
 		</tr>
+        {% endifequal %}
+
 		
 		
 		<tr>
