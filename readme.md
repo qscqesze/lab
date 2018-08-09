@@ -1,4 +1,6 @@
-lab 
+lab
+
+前端抄袭自:http://acm.scu.edu.cn/soj/index.action
 
 如果你是第一次运行
 	
