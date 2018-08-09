@@ -25,7 +25,7 @@ SECRET_KEY = 'fcr4er3r&(acta8i9%!#381hdl(y0!k_(n)dxqld%rizbatddc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['10.8.127.140', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'lutece_lab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR+"/templates",],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

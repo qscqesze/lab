@@ -1,2 +1,2 @@
-python3 manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver 10.8.127.140:8000
 
