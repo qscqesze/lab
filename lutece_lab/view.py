@@ -6,6 +6,22 @@ from django.shortcuts import redirect
 from user.models import User
 import logging
 
+def up_to_back(url):
+    pos1 = 0
+    pos2 = 0
+    for i in range(0,len(url)):
+        if url[i] == '/':
+            pos2 = pos1
+            pos1 = i
+    if pos1 == 0:
+        return "-1"
+    new_url = ""
+    for i in range(0,len(url)):
+        if i >= pos2 and i < pos1:
+            continue
+        new_url += url[i]
+    return new_url
+
 def hello(request):
     context = {'user':request.COOKIES.get('user', '')}
     logging.debug(request)
@@ -42,3 +58,7 @@ def logout(request):
     response = HttpResponseRedirect('index.html')
     response.delete_cookie('user')
     return response
+
+
+if __name__ == '__main__':
+    print(up_to_back('./problem/index.html'))

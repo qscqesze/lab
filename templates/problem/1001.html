@@ -1,0 +1,34 @@
+{% extends "../base.html" %}
+{% block mainbody %}
+<h1 align="center">1001: Titanic</h1>
+<table width="100%" border="0" align="center">
+<tr>
+	<td align="center">
+		<a href="submit_form.action?id=1001">Submissions</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="discuss/topics.action?id=1001">Discuss this problem</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="problem_best_solutions.action?id=1001">Rank list</a>
+
+		<br>submit your csv:</br>
+		<form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="1001solution">
+        <input type="submit">
+    </form>
+	</td>
+
+
+</tr>
+<tr><td height="30"></td></tr>
+<tr>
+	<td>
+<p>Titanic. Please see the kaggle for more detail.</p>
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533934253059&di=e9fd78d0c18bc21122545bf421ccadce&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201406%2F24%2F20140624153008_KCAMd.thumb.700_0.jpeg" alt="titanic"/>
+	</td>
+</tr>
+
+
+</table>
+{% endblock %}
+
+
