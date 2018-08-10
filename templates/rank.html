@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<h1 align="center">Rank list</h1>
+<table width="580" border="1" align="center" cellpadding="3">
+<tr>
+	<td colspan="5">
+
+		 <a href="rank.action?page=0">[0]</a>
+		 ...
+	</td>
+</tr>
+<tr>
+	<th width="49" scope="col">Rank</th>
+	<th width="207" scope="col">User</th>
+	<th width="94" scope="col">Solved</th>
+	<th width="94" scope="col">Submitted</th>
+	<th width="82" scope="col">Rate</th>
+</tr>
+
+<tr>
+	<td align="center">1</td>
+	<td align="center"><a href="user.action?id=baihacker">qscqesze</a></td>
+	<td align="center">2145</td>
+	<td align="center">2652</td>
+	<td align="right">80.882%</td>
+</tr>
+
+</table>
+{% endblock %}
+
+

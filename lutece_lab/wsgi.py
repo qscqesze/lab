@@ -1,3 +1,5 @@
+# -*- coding: gbk -*-
+
 """
 WSGI config for lutece_lab project.
 

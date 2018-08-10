@@ -1,14 +1,57 @@
-<!DOCTYPE html>
 <html>
+<meta charset="gbk">
 <head>
-<meta charset="utf-8">
-<title>lutece(lutece.com)</title>
-</head>
+<title>Lutece Lab</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<link href="index.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.menu {
+	font-size:16px;
+	font-weight: bold;
+}
+a {color:black; text-decoration:none}
+</style>
+</HEAD>
+
 <body>
-    <h2>lutece lab     <input type="button" name="Submit" value="返回主页" onclick ="location.href=''"/>
-</h2>
+
+<p align="right">
+	<a href="index.html">Home</a>
+
+
+	| <a href="rank.html">Ranklist</a>
+	| <a href="problems.html">Problems</a>
+	| <a href="submissions.html">Submission</a>
+	| <a href="contest/contests.html">Contests</a>
+	| <a href="discuss/all_topics.html">Discuss</a>
+    {% ifequal user '' %}
+	| <a href="register.html">Register</a>
+	| <a href="login.html">Login</a>
+    {% else %}
+    | {{ user }}
+	| <a href="logout">Login out</a>
+    {% endifequal %}
+
+
+
+</p>
+
     {% block mainbody %}
        <p>original</p>
     {% endblock %}
+
+
+<tr>
+	<td colspan="2" height="40" align="center" valign="bottom">
+		<hr>
+		Lutece Lab 2018 @qscqesze
+	</td>
+</tr>
+</table>
+
+
+
+<div style="position:absolute; top:0; left:0;"><a style="text-decoration: none;" href="admin">&nbsp;&nbsp;</a></div>
+
 </body>
-</html>
+</HTML>
